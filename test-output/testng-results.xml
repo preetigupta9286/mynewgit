@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-29T19:25:10 EST" name="Default suite" finished-at="2019-12-29T19:25:11 EST" duration-ms="803">
+  <suite started-at="2019-12-29T20:02:27 EST" name="Default suite" finished-at="2019-12-29T20:02:27 EST" duration-ms="412">
     <groups>
     </groups>
-    <test started-at="2019-12-29T19:25:10 EST" name="Default test" finished-at="2019-12-29T19:25:11 EST" duration-ms="803">
+    <test started-at="2019-12-29T20:02:27 EST" name="Default test" finished-at="2019-12-29T20:02:27 EST" duration-ms="412">
       <class name="testutility.ExtentReportsClass">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:10 EST" name="startReport" finished-at="2019-12-29T19:25:11 EST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="startReport" finished-at="2019-12-29T20:02:27 EST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="failTest()[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="failTest" finished-at="2019-12-29T19:25:11 EST" duration-ms="12" status="FAIL">
+        <test-method signature="failTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="failTest" finished-at="2019-12-29T20:02:27 EST" duration-ms="9" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect to find [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:969)
 at org.testng.Assert.assertTrue(Assert.java:43)
 at org.testng.Assert.assertTrue(Assert.java:53)
-at testutility.ExtentReportsClass.failTest(ExtentReportsClass.java:57)
+at testutility.ExtentReportsClass.failTest(ExtentReportsClass.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,29 +57,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="getResult" finished-at="2019-12-29T19:25:11 EST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="getResult" finished-at="2019-12-29T20:02:27 EST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=failTest status=FAILURE method=ExtentReportsClass.failTest()[pri:0, instance:testutility.ExtentReportsClass@43301423] output={null}]]]>
+                <![CDATA[[TestResult name=failTest status=FAILURE method=ExtentReportsClass.failTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="passTest()[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="passTest" finished-at="2019-12-29T19:25:11 EST" duration-ms="1" status="PASS">
+        <test-method signature="passTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="passTest" finished-at="2019-12-29T20:02:27 EST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passTest -->
-        <test-method signature="skipTest()[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="skipTest" finished-at="2019-12-29T19:25:11 EST" duration-ms="1" status="SKIP">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="getResult" finished-at="2019-12-29T20:02:27 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=ExtentReportsClass.passTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="skipTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="skipTest" finished-at="2019-12-29T20:02:27 EST" duration-ms="1" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping - This is not ready for testing ]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping - This is not ready for testing 
-at testutility.ExtentReportsClass.skipTest(ExtentReportsClass.java:64)
+at testutility.ExtentReportsClass.skipTest(ExtentReportsClass.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,29 +125,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skipTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="getResult" finished-at="2019-12-29T19:25:11 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="getResult" finished-at="2019-12-29T20:02:27 EST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=passTest status=SUCCESS method=ExtentReportsClass.passTest()[pri:0, instance:testutility.ExtentReportsClass@43301423] output={null}]]]>
+                <![CDATA[[TestResult name=skipTest status=SKIP method=ExtentReportsClass.skipTest()[pri:0, instance:testutility.ExtentReportsClass@12b0404f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="getResult" finished-at="2019-12-29T19:25:11 EST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=skipTest status=SKIP method=ExtentReportsClass.skipTest()[pri:0, instance:testutility.ExtentReportsClass@43301423] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testutility.ExtentReportsClass@43301423]" started-at="2019-12-29T19:25:11 EST" name="endReport" finished-at="2019-12-29T19:25:11 EST" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testutility.ExtentReportsClass@12b0404f]" started-at="2019-12-29T20:02:27 EST" name="endReport" finished-at="2019-12-29T20:02:27 EST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

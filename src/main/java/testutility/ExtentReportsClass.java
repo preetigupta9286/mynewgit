@@ -1,6 +1,12 @@
 package testutility;
 import java.io.File;
+import java.text.SimpleDateFormat;
 
+import org.apache.poi.hpsf.Date;
+import org.apache.tools.ant.util.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.SkipException;
@@ -19,6 +25,7 @@ public class ExtentReportsClass {
 
 ExtentReports extent;
 ExtentTest logger;
+File finalDestination;
 
 
 @BeforeTest
@@ -57,7 +64,18 @@ logger = extent.startTest("failTest");
 Assert.assertTrue(false);
 logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 }
-
+public static String getScreenhot(WebDriver driver, String screenshotName) throws Exception {
+	 String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	 TakesScreenshot ts = (TakesScreenshot) driver;
+	 File source = ts.getScreenshotAs(OutputType.FILE);
+	                //after execution, you could see a folder "FailedTestsScreenshots" under src folder
+	 String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
+	 File finalDestination = new File(destination);
+	 FileUtils.getFileUtils().copyFile(source, finalDestination);
+	 //FileUtils.getFileUtils().copyFile(source, finalDestination);
+	 //FileUtils.copyFile(source, finalDestination);
+	 return destination;
+	 }
 @Test
 public void skipTest(){
 logger = extent.startTest("skipTest");
